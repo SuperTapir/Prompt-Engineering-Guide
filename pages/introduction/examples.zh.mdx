@@ -25,7 +25,7 @@
 _提示词_
 
 ```
-Explain antibiotics
+Explain antibiotics // 解释抗生素
 
 A:
 ```
@@ -91,7 +91,8 @@ Paragraph source: [ChatGPT: five priorities for research](https://www.nature.com
 _提示词_
 
 ```
-Answer the question based on the context below. Keep the answer short and concise. Respond "Unsure about answer" if not sure about the answer. // 基于以下语境回答问题。如果不知道答案的话，请回答“不确定答案”。
+// 基于以下语境回答问题。如果不知道答案的话，请回答“不确定答案”。
+Answer the question based on the context below. Keep the answer short and concise. Respond "Unsure about answer" if not sure about the answer. 
 
 Context: Teplizumab traces its roots to a New Jersey drug company called Ortho Pharmaceutical. There, scientists generated an early version of the antibody, dubbed OKT3. Originally sourced from mice, the molecule was able to bind to the surface of T cells and limit their cell-killing potential. In 1986, it was approved to help prevent organ rejection after kidney transplants, making it the first therapeutic antibody allowed for human use.
 
@@ -181,7 +182,8 @@ Neutral
 _提示词_
 
 ```
-The following is a conversation with an AI research assistant. The assistant tone is technical and scientific. // 以下是与 AI 助理的对话，语气应该专业、技术性强。
+// 以下是与 AI 助理的对话，语气应该专业、技术性强。
+The following is a conversation with an AI research assistant. The assistant tone is technical and scientific. 
 
 Human: Hello, who are you?
 AI: Greeting! I am an AI research assistant. How can I help you today?
@@ -200,7 +202,8 @@ Sure! Black holes are regions of spacetime where the gravitational force is so s
 _提示词_
 
 ```
-The following is a conversation with an AI research assistant. The assistant answers should be easy to understand even by primary school students. // 以下是与 AI 助理的对话。请给出易于理解的答案，最好是小学生都能看懂的那种。
+// 以下是与 AI 助理的对话。请给出易于理解的答案，最好是小学生都能看懂的那种。
+The following is a conversation with an AI research assistant. The assistant answers should be easy to understand even by primary school students. 
 
 Human: Hello, who are you?
 AI: Greeting! I am an AI research assistant. How can I help you today?
@@ -274,7 +277,7 @@ WHERE DepartmentId IN (SELECT DepartmentId FROM departments WHERE DepartmentName
 _提示词_
 
 ```
-What is 9,000 * 9,000?
+9,000 * 9,000 是多少?
 ```
 
 _输出结果_
@@ -288,7 +291,7 @@ _输出结果_
 _提示词_
 
 ```
-The odd numbers in this group add up to an even number: 15, 32, 5, 13, 82, 7, 1. 
+这组数中的奇数之和是一个偶数: 15, 32, 5, 13, 82, 7, 1. 
 
 A: 
 ```
@@ -296,25 +299,25 @@ A:
 _输出结果_
 
 ```
-No, the odd numbers in this group add up to an odd number: 119.
+不，这组中的奇数相加得到的是一个奇数：119。
 ```
 
-这不对！ 我们试着用提示词去改进它：
+结果不对！ 我们试着用提示词去改进它：
 
 _提示词_
 
 ```
-The odd numbers in this group add up to an even number: 15, 32, 5, 13, 82, 7, 1. 
+这组数中的奇数之和是一个偶数: 15, 32, 5, 13, 82, 7, 1. 
 
-Solve by breaking the problem into steps. First, identify the odd numbers, add them, and indicate whether the result is odd or even. 
+将问题分解成以下步骤来解决。首先，识别奇数，将它们相加，再指出结果是奇数还是偶数。
 ```
 
 _输出结果_
 
 ```
-Odd numbers: 15, 5, 13, 7, 1
-Sum: 41 
-41 is an odd number.
+奇数: 15, 5, 13, 7, 1
+和: 41 
+41 是奇数。
 ```
 
 好多了吧？ 顺便说一句，我试过几次，有时还是会失败。 如果你可以用示例给模型说明一下，可能会获得更准确的结果。
